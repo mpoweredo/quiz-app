@@ -1,13 +1,84 @@
-export const numberQuiz = [{
-    question: 'what is 2 + 2?',
-    answers: [
-        {text: '4', correct: true},
-        {text: '7', correct: false}
-    ]
-},{
-    question: 'what is 4 * 4?',
-    answers: [
-        {text: '16', correct: true},
-        {text: '24', correct: false}
-    ]
-},]
+// export const numberQuiz = [
+// 	{
+// 		question: "what is 2 + 2?",
+// 		answers: [
+// 			{ text: "4", correct: true },
+// 			{ text: "7", correct: false },
+// 		],
+// 	},
+// 	{
+// 		question: "what is 4 * 4?",
+// 		answers: [
+// 			{ text: "16", correct: true },
+// 			{ text: "24", correct: false },
+// 		],
+// 	},
+// ];
+
+export const quizes = [
+    {
+        title: 'Quiz about math',
+        questions: [{
+            question: "what is 2 + 2?",
+            answers: [
+                { text: "4", correct: true },
+                { text: "7", correct: false },
+            ],
+        },
+        {
+            question: "what is 4 * 4?",
+            answers: [
+                { text: "16", correct: true },
+                { text: "24", correct: false },
+            ],
+        },
+        {
+            question: "what is 4 * 4?",
+            answers: [
+                { text: "16", correct: true },
+                { text: "24", correct: false },
+            ],
+        },
+        {
+            question: "what is 4 * 4?",
+            answers: [
+                { text: "16", correct: true },
+                { text: "24", correct: false },
+            ],
+        },
+        {
+            question: "what is 4 * 4?",
+            answers: [
+                { text: "16", correct: true },
+                { text: "24", correct: false },
+            ],
+        },
+        {
+            question: "what is 4 * 4?",
+            answers: [
+                { text: "16", correct: true },
+                { text: "24", correct: false },
+            ],
+        },]
+    }
+]
+
+
+// export const quizes = [
+// 	[
+// 		{
+// 			question: "what is 2 + 2?",
+// 			answers: [
+// 				{ text: "4", correct: true },
+// 				{ text: "7", correct: false },
+// 			],
+// 		},
+// 		{
+// 			question: "what is 4 * 4?",
+// 			answers: [
+// 				{ text: "16", correct: true },
+// 				{ text: "24", correct: false },
+// 			],
+// 		},
+// 	],
+// ];
