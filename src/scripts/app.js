@@ -1,4 +1,3 @@
-import { renderQuizes } from "./selectQuiz.js";
 
 export const quizHandler = {
     CURRENT_QUESTION: 0,
