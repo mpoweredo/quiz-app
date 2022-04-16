@@ -16,13 +16,11 @@ let points = 0;
 
 
 
-const startGame = () => {
+export const startGame = (selectedQuiz) => {
     startGameContainer.classList.add('hide')
     quiz.classList.remove('hide')
-    renderQuestion(quizes[0]);
+    renderQuestion(quizes[selectedQuiz]);
 }
-
-
 
 startGameBtn.addEventListener('click', startGame)
 
@@ -72,7 +70,7 @@ const nextQuestion = () => {
     if (CURRENT_QUIZ.questions.length <= CURRENT_QUESTION) {
         quiz.classList.add('hide')
         result.parentNode.classList.remove('hide')
-        result.textContent = `ukonczyles quiz z wynikiem ${points}`
+        result.textContent = `ukonczyles quiz z wynikiem ${points}/${CURRENT_QUIZ.questions.length} punktow!`
         return
     }
     renderQuestion(CURRENT_QUIZ);

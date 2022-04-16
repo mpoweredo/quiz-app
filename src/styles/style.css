@@ -57,7 +57,7 @@ button {
 }
 
 .hide { 
-    display: none;
+    display: none !important;
 }
 
 .correct {
@@ -66,4 +66,9 @@ button {
 
 .wrong {
     background-color: rgb(247, 83, 83);
+}
+
+.select-quiz {
+    display: flex;
+    gap: 2em;
 }
