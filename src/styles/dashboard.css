@@ -1,0 +1,40 @@
+.dashboard {
+    position: relative;
+    width: 100%;
+    background-color: #22252d;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-radius: 0 3em 3em 0;
+}
+
+.app-name {
+    padding: 3em 0;
+}
+
+.app-name h1 {
+    color: rgb(255, 255, 255);
+    margin-bottom: 3em;
+    font-weight: 700;
+}
+
+.buttons .active {
+    background: rgb(45,48,56);
+    background: linear-gradient(90deg, rgba(45,48,56,0.10127801120448177) 0%, rgba(45,48,56,15) 100%);
+    color: white;
+    border-radius: 15px;
+    padding: 1.2em 1.6em;
+}
+
+.buttons button {
+    font-size: 1.1em;
+    letter-spacing: .7px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5em;
+}
