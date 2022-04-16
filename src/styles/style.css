@@ -34,26 +34,32 @@ body {
 }
 
 .quiz, .results  {
-    background-color: rgb(245, 220, 245);
+    background-color: rgb(14, 11, 66);
+    gap: 2em;
     padding: 2em;
-    min-width: 400px;
-    min-height: 300px;
+    width: 500px;
+    min-height: 150px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.questions{
+.questions {
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     gap: 2em;
 }
 
+.questions button {
+    width: 100%;
+}
+
 button {
     padding: .8em 1.2em;
     outline: transparent;
-    border: 1px solid rgb(255, 136, 0);
+    border: 2px solid rgb(0, 119, 255);
 }
 
 .hide { 
@@ -68,7 +74,7 @@ button {
     background-color: rgb(247, 83, 83);
 }
 
-.select-quiz {
+.quizzes {
     display: flex;
     gap: 2em;
 }
