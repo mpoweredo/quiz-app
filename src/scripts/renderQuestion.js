@@ -11,4 +11,5 @@ export const renderQuestion = quiz => {
     clearQuestions();
     renderAnswers(quiz.questions[quizHandler.CURRENT_QUESTION])
     quizHandler.CURRENT_QUIZ = quiz;
+    
 }

@@ -1,4 +1,6 @@
 import { quizHandler } from "./app.js";
 import { startGame } from "./startGame.js"
 
-startGame(quizHandler.CURRENT_QUIZ)
+const currentQuiz = JSON.parse(localStorage.getItem('quizHandler'));
+
+startGame(currentQuiz.CURRENT_QUIZ)
