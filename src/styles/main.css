@@ -81,3 +81,8 @@ main header {
 #last-score {
     color: rgba(255, 255, 255, 0.9);
 }
+
+.error {
+    color: rgb(255, 87, 87);
+    font-size: .8em;
+}
