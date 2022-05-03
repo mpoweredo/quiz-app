@@ -1,3 +1,5 @@
+
+
 export const quizzesStorage = [
     {
         title: 'Quiz about math',
@@ -124,10 +126,21 @@ export const quizzesStorage = [
         },
         ]
     },
-
+    
 ]
 
+if (localStorage.getItem('areQuizesRendered') == null) {
+    let areQuizesRendered = false;
+    localStorage.setItem('quizzes', JSON.stringify(quizzesStorage))
+    localStorage.setItem('areQuizesRendered', JSON.stringify('true'))
+}
+
+// if (!areQuizesRendered) {
+
+// }
+
 export const quizzes = JSON.parse(localStorage.getItem('quizzes'))
+
 
 if (quizzes) {
     localStorage.setItem('quizzes', JSON.stringify(quizzes))

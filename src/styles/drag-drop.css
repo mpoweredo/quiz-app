@@ -1,0 +1,47 @@
+.hide {
+    display: none;
+}
+
+.drag-over {
+    background-color: #ce5050 !important;
+}
+
+.removeQuizDrop {
+    position: relative;
+    margin: auto 0 2em 0;
+    background-color: #fe6a6a;
+    color: #ffdddd;
+    width: 80%;
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.removeQuizDrop::after {
+    display: none;
+    font-size: .8em;
+    color: rgb(255, 87, 87);
+    text-align: left;
+    padding: .6em;
+    content: "Drag and drop to remove quiz!";
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: -130%;
+}
+
+.removeQuizDrop::before {
+    display: none;
+    content: '';
+    position: absolute;
+    top: -39%;
+    background-color: rgb(255, 255, 255);
+    transform: rotate(45deg);
+    width: 10px;
+    height: 10px;
+}
+
+.removeQuizDrop:hover::before, .removeQuizDrop:hover::after  {
+    display: block;
+}
