@@ -19,44 +19,6 @@ body {
     grid-template-columns: 230px 1fr;
 }
 
-#quiz-title {
-    color: white;
-    font-size: 2em;
-}
-
-.start-game {
-    width: 500px;
-    height: 300px;
-    background-color: rgb(41, 6, 51);
-    padding: 2em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.quiz, .results  {
-    background-color: rgb(14, 11, 66);
-    gap: 2em;
-    padding: 2em;
-    width: 500px;
-    min-height: 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.questions {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    gap: 2em;
-}
-
-.questions button {
-    width: 100%;
-}
-
 button {
     padding: .8em 1.2em;
     outline: transparent;
@@ -67,15 +29,5 @@ button {
     display: none !important;
 }
 
-.correct {
-    background-color: rgb(120, 240, 120);
-}
 
-.wrong {
-    background-color: rgb(247, 83, 83);
-}
 
-.quizzes {
-    display: flex;
-    gap: 2em;
-}

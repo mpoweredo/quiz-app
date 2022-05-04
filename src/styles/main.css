@@ -48,11 +48,34 @@ main header {
 }
 
 .quizzes {
+    z-index: 1;
+    position: relative;
     display: flex;
+    align-items: center;
     flex-direction: row;
+    width: 100%;
+    height: 235px;
+    overflow-x: auto;
+    padding: .8em 0.8em 0.8em 0;
+    gap: 1.75em;
+}
+
+.quizzes::-webkit-scrollbar {
+    height: 6px;
+}
+
+.quizzes::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.quizzes::-webkit-scrollbar-thumb {
+    background-color: #22252d;
+    border-radius: 50px;
 }
 
 .button-quiz {
+    position: relative;
+    z-index: 2;
     min-width: 300px;
     max-width: 300px;
     height: 200px;
@@ -75,7 +98,7 @@ main header {
 }
 
 .button-quiz:hover {
-    transform: scale(105%);
+    background-color: #1f2229;
 }
 
 #last-score {

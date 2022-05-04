@@ -7,7 +7,6 @@ const startGameContainer = document.querySelector('.start-game')
 
 export const startGame = (selectedQuiz) => {
     quizHandler.CURRENT_QUIZ_INDEX = parseInt(selectedQuiz);
-    startGameContainer.classList.add('hide')
     quiz.classList.remove('hide')
     renderQuestion(quizzes[selectedQuiz]);
 }

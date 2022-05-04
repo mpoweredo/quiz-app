@@ -22,11 +22,12 @@
 .removeQuizDrop::after {
     display: none;
     font-size: .8em;
-    color: rgb(255, 87, 87);
+    border-radius: 3px;
+    color: #92a1cc;
     text-align: left;
     padding: .6em;
     content: "Drag and drop to remove quiz!";
-    background-color: rgb(255, 255, 255);
+    background-color: #2e3139;
     position: absolute;
     top: -130%;
 }
@@ -36,7 +37,7 @@
     content: '';
     position: absolute;
     top: -39%;
-    background-color: rgb(255, 255, 255);
+    background-color: #2e3139;
     transform: rotate(45deg);
     width: 10px;
     height: 10px;

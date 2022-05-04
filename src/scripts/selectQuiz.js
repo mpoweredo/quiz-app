@@ -25,11 +25,16 @@ export const renderQuizes = () => {
 		selectQuiz.classList.add("button-quiz");
 		selectQuiz.addEventListener("click", selectQuizHandler);
 		selectQuiz.addEventListener("dragstart", e => {
-			e.dataTransfer.setData('text/plain', e.target.closest('div').dataset.arrayIndex)
+			const index = e.target.closest('div').dataset.arrayIndex;
+			e.dataTransfer.setData('text/plain', index)
+			sessionStorage.setItem('quizIndex', index)
 			setTimeout(() => {
 				e.target.classList.add('hide')
-			}, 0);
+			}, 30);
 		});
+		selectQuiz.addEventListener('dragend', (e) => {
+			e.target.classList.remove('hide')
+		})
 		quizesContainer.appendChild(selectQuiz);
 		indexOfQuiz++;
 		selectQuiz.innerHTML = `

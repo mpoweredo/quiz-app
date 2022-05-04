@@ -1,4 +1,4 @@
-import { questionsContainer } from "./app.js";
+import { answersContainer } from "./app.js";
 import { checkAnswer } from "./checkAnswer.js";
 
 export const renderAnswers = question => {
@@ -6,7 +6,7 @@ export const renderAnswers = question => {
         const answerButton = document.createElement('button')
         answerButton.textContent = questionEl.text;
         answerButton.dataset.answer = questionEl.correct;
-        questionsContainer.appendChild(answerButton)
+        answersContainer.appendChild(answerButton)
         answerButton.addEventListener('click', checkAnswer)
     }
 }

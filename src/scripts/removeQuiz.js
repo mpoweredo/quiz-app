@@ -22,8 +22,19 @@ const removeColor = e => {
 	e.target.closest('.removeQuizDrop').classList.remove('drag-over')
 }
 
+const jd = (e) => {
+	e.preventDefault();
+	console.log("kurwa")
+	const index = sessionStorage.getItem('quizIndex')
+	console.log(index)
+	const movingBox = document.querySelector(`[data-array-index="${index}"`)
+	console.log(movingBox)
+	movingBox.classList.remove('hide')
+}
+
 
 removeBox.addEventListener('dragenter', addColor)
 removeBox.addEventListener('dragover', addColor)
 removeBox.addEventListener('dragleave', removeColor)
+removeBox.addEventListener('dragend', jd)
 removeBox.addEventListener('drop', removeQuiz)

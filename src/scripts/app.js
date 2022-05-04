@@ -4,6 +4,6 @@ export const quizHandler = {
 	CURRENT_QUIZ: 0,
 	points: 0,
 };
-export const questionsContainer = document.getElementById("questions");
+export const answersContainer = document.getElementById("answers");
 
 

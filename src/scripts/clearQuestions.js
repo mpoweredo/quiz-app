@@ -1,7 +1,7 @@
-import { questionsContainer } from "./app.js";
+import { answersContainer } from "./app.js";
 
 export const clearQuestions = () => {
-    while (questionsContainer.lastElementChild) {
-        questionsContainer.lastElementChild.remove();
+    while (answersContainer.lastElementChild) {
+        answersContainer.lastElementChild.remove();
     }
 }
