@@ -1,4 +1,4 @@
-import { answersContainer } from "./app.js";
+import { answersContainer } from "../dashboard/app.js";
 
 export const clearQuestions = () => {
     while (answersContainer.lastElementChild) {

@@ -1,5 +1,5 @@
 import { nextQuestion } from "./nextQuestion.js";
-import { quizHandler } from "./app.js";
+import { quizHandler } from "../dashboard/app.js";
 
 
 export const checkAnswer = e => {

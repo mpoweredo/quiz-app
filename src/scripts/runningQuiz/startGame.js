@@ -1,6 +1,6 @@
 import { renderQuestion } from "./renderQuestion.js"
-import { quizzes } from "./quizzes.js"
-import { quizHandler } from "./app.js"
+import { quizzes } from "../dashboard/quizzes.js"
+import { quizHandler } from "../dashboard/app.js"
 
 const startGameContainer = document.querySelector('.start-game')
 

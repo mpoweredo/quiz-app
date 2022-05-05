@@ -1,5 +1,5 @@
-import { quizHandler } from "./app.js"
-import { quizzes } from "./quizzes.js";
+import { quizHandler } from "../dashboard/app.js"
+import { quizzes } from "../dashboard/quizzes.js";
 import { renderQuestion } from "./renderQuestion.js";
 
 export const nextQuestion = () => {
@@ -7,7 +7,8 @@ export const nextQuestion = () => {
     if (quizHandler.CURRENT_QUIZ.questions.length <= quizHandler.CURRENT_QUESTION) {
         quiz.classList.add('hide')
         result.parentNode.classList.remove('hide')
-        result.textContent = `ukonczyles quiz z wynikiem ${quizHandler.points}/${quizHandler.CURRENT_QUIZ.questions.length} punktow!`
+        const scoreOutput = quizHandler.points > 1 || quizHandler.points == 0 ? "points" : "point";
+        result.textContent = `You finished quiz with ${quizHandler.points}/${quizHandler.CURRENT_QUIZ.questions.length} ${scoreOutput} !`
         const lastScore = {
             quizIndex: quizHandler.CURRENT_QUIZ_INDEX,
             quizScore: quizHandler.points

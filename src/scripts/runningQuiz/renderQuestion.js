@@ -1,5 +1,5 @@
 const quizTitle = document.getElementById('quiz-title');
-import { quizHandler } from "./app.js";
+import { quizHandler } from "../dashboard/app.js";
 import { clearQuestions } from "./clearQuestions.js";
 import { renderAnswers } from "./renderAnswer.js";
 export let CURRENT_QUIZ;
@@ -11,5 +11,4 @@ export const renderQuestion = quiz => {
     clearQuestions();
     renderAnswers(quiz.questions[quizHandler.CURRENT_QUESTION])
     quizHandler.CURRENT_QUIZ = quiz;
-    
 }

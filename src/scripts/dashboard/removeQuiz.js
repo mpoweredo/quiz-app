@@ -1,6 +1,5 @@
-import { renderQuizes } from "./selectQuiz.js"
 import { quizzes } from "./quizzes.js"
-import { quizesContainer } from "./selectQuiz.js"
+import { clearQuizContainer } from "./clearQuizesContainer.js"
 
 const removeBox = document.getElementById('removeBox')
 
@@ -10,8 +9,7 @@ export const removeQuiz = e => {
 	quizzes.splice(index, 1);
 	console.log(index)
 	localStorage.setItem('quizzes', JSON.stringify(quizzes))
-	quizesContainer.innerHTML = "";
-	renderQuizes();
+	clearQuizContainer();
 }
 
 const addColor = e => {
@@ -22,19 +20,8 @@ const removeColor = e => {
 	e.target.closest('.removeQuizDrop').classList.remove('drag-over')
 }
 
-const jd = (e) => {
-	e.preventDefault();
-	console.log("kurwa")
-	const index = sessionStorage.getItem('quizIndex')
-	console.log(index)
-	const movingBox = document.querySelector(`[data-array-index="${index}"`)
-	console.log(movingBox)
-	movingBox.classList.remove('hide')
-}
-
 
 removeBox.addEventListener('dragenter', addColor)
 removeBox.addEventListener('dragover', addColor)
 removeBox.addEventListener('dragleave', removeColor)
-removeBox.addEventListener('dragend', jd)
 removeBox.addEventListener('drop', removeQuiz)

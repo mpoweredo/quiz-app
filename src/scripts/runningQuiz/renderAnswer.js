@@ -1,4 +1,4 @@
-import { answersContainer } from "./app.js";
+import { answersContainer } from "../dashboard/app.js";
 import { checkAnswer } from "./checkAnswer.js";
 
 export const renderAnswers = question => {

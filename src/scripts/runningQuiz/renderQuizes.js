@@ -1,19 +1,10 @@
-import { quizzes } from "./quizzes.js";
-import { quizHandler } from "./app.js";
+import { quizzes } from "../dashboard/quizzes.js";
+import { quizesContainer } from "../dashboard/clearQuizesContainer.js";
+import { selectQuizHandler } from "../dashboard/selectQuiz.js";
 
-export const quizesContainer = document.querySelector(".quizzes");
-
-const selectQuizHandler = (e) => {
-	const indexOfQuiz = e.target.closest('div').dataset.arrayIndex;
-	quizHandler.CURRENT_QUIZ = indexOfQuiz;
-	window.open("quiz.html", "_blank");
-    localStorage.removeItem('quizHandler')
-    localStorage.setItem('quizHandler', JSON.stringify(quizHandler))
-};
 
 export const renderQuizes = () => {
 	let indexOfQuiz = 0;
-	console.log(quizzes)
 	if (quizzes == false) {
 		quizesContainer.innerHTML = `<h3 class="error">W twojej bazie danych nie ma jeszcze zadnego quizu!</h3>`
 		return
@@ -45,4 +36,5 @@ export const renderQuizes = () => {
 };
 
 
-renderQuizes();
+
+document.addEventListener('DOMContentLoaded', renderQuizes);
