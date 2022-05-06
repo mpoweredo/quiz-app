@@ -6,27 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./src/styles/style.css">
-    <link rel="stylesheet" href="./src/styles/dashboard.css">
+    <link rel="stylesheet" href="./src/styles/sidebar.css">
     <link rel="stylesheet" href="./src/styles/main.css">
     <link rel="stylesheet" href="./src/styles/drag-drop.css">
+    <link rel="stylesheet" href="./src/styles/createQuiz.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <script src="./src/scripts/createQuiz/addQuestion.js" defer></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="./src/scripts/sidebar/sidebar.js" defer></script>
     <script src="./src/scripts/dashboard/app.js" type="module" defer></script>
     <script src="./src/scripts/dashboard/selectQuiz.js" type="module" defer></script>
     <script src="./src/scripts/dashboard/removeQuiz.js" defer type="module"></script>
 </head>
-<body>
+<body class="create-quiz-active">
 
-    <aside class="dashboard">
+    <aside class="sidebar-menu">
         <div class="app-name">
             <h1>Quiz App</h1>
         </div>
         <div class="buttons">
-            <button class="active" id="dashboard">
+            <button class="dashboard-button" id="dashboard">
                 <span class="material-icons">space_dashboard</span>
                 Dashboard
             </button>
-            <button class="" id="add">
+            <button class="create-quiz-button" id="create-quiz">
                 <span class="material-icons">add_circle</span>
                 Create Quiz
             </button>
@@ -38,19 +41,24 @@
     </aside>
 
     <main>
-        <header>
-            <div class="header-info">
-                <h1>Dashboard</h1>
-                <p>Here's an overview of your app</p>
+        <section class="dashboard">
+            <header>
+                <div class="header-info">
+                    <h1>Dashboard</h1>
+                    <p>Here's an overview of your app</p>
+                </div>
+                <div class="search-input">
+                    <input type="text" placeholder="Search"><span class="material-icons-outlined search-icon">
+                        search
+                        </span>
+                </div>
+            </header>
+            <div class="quizzes">
             </div>
-            <div class="search-input">
-                <input type="text" placeholder="Search"><span class="material-icons-outlined search-icon">
-                    search
-                    </span>
-            </div>
-        </header>
-        <div class="quizzes">
-        </div>
+        </section>
+        <section class="create-quiz">
+            <h1>soon</h1>
+        </section>
     </main>
 
 

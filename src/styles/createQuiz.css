@@ -1,0 +1,13 @@
+.create-quiz {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.answers {
+    margin-top: 2em;
+    display: flex;
+    gap: .5em;
+    flex-direction: column;
+}

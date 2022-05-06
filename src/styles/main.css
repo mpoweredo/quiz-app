@@ -3,13 +3,15 @@ main {
     padding: 2em;
     border-radius: 2em;
     margin: 2em;
-    display: flex;
+}
+
+.dashboard {
+    display: none;
     flex-direction: column;
-    gap: 2em;
     position: relative;
 }
 
-main header {
+.dashboard header {
     display: flex;
     align-items: center;
     justify-content: space-between;

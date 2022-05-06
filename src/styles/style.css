@@ -29,5 +29,31 @@ button {
     display: none !important;
 }
 
+.dashboard-active .dashboard {
+    display: flex;
+}
+
+.dashboard-active .dashboard-button {
+    background: rgb(45,48,56);
+    background: linear-gradient(90deg, rgba(45,48,56,0.10127801120448177) 0%, rgba(45,48,56,15) 100%);
+    color: white;
+    border-radius: 15px;
+}
+
+.dashboard-active .removeQuizDrop {
+    display: flex;
+}
+
+.create-quiz-active .create-quiz {
+    display: flex;
+}
+
+.create-quiz-active .create-quiz-button {
+    background: rgb(45,48,56);
+    background: linear-gradient(90deg, rgba(45,48,56,0.10127801120448177) 0%, rgba(45,48,56,15) 100%);
+    color: white;
+    border-radius: 15px;
+}
+
 
 

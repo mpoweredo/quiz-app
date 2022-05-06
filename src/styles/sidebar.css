@@ -1,4 +1,4 @@
-.dashboard {
+.sidebar-menu {
     position: relative;
     width: 100%;
     background-color: #22252d;
@@ -20,20 +20,13 @@
     font-weight: 700;
 }
 
-.buttons .active {
-    background: rgb(45,48,56);
-    background: linear-gradient(90deg, rgba(45,48,56,0.10127801120448177) 0%, rgba(45,48,56,15) 100%);
-    color: white;
-    border-radius: 15px;
-    padding: 1.2em 1.6em;
-}
 
 .buttons {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2em;
+    gap: 1.25em;
 }
 
 .buttons button {
@@ -48,5 +41,6 @@
     align-items: center;
     justify-content: center;
     gap: .5em;
+    padding: 1.2em 1.6em;
 }
 
