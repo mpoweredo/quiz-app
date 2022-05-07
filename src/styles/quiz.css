@@ -71,3 +71,8 @@ button:hover {
     background-color: #303749;
 }
 
+.done {
+    margin-top: 1em;
+    padding: .6em .8em !important;
+    font-size: .8em;
+}

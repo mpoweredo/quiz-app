@@ -1,7 +1,8 @@
-import { quizzes } from "../dashboard/quizzes.js";
-import { quizesContainer } from "../dashboard/clearQuizesContainer.js";
-import { selectQuizHandler } from "../dashboard/selectQuiz.js";
+import { quizzes } from "./quizzes.js";
+import { quizesContainer } from "./clearQuizesContainer.js";
+import { selectQuizHandler } from "./selectQuiz.js";
 
+export let QuizzesCards = [];
 
 export const renderQuizes = () => {
 	let indexOfQuiz = 0;
@@ -9,7 +10,7 @@ export const renderQuizes = () => {
 		quizesContainer.innerHTML = `<h3 class="error">W twojej bazie danych nie ma jeszcze zadnego quizu!</h3>`
 		return
 	}
-	for (const quiz of quizzes) {
+	for (const quiz of quizzes) {		
 		const selectQuiz = document.createElement("div");
 		selectQuiz.dataset.arrayIndex = indexOfQuiz;
 		selectQuiz.setAttribute('draggable', true)
@@ -32,6 +33,12 @@ export const renderQuizes = () => {
             <h1>${quiz.title}</h1>
             <p>Lastest quiz score: <span id="last-score">${quiz.lastScore || 0}/${quiz.questions.length}pkt</span></p>
         `;
+
+		const quizCard = {
+			title: quiz.title.toUpperCase(),
+			element: selectQuiz
+		}
+		QuizzesCards.push(quizCard);
 	}
 };
 

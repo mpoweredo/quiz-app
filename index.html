@@ -17,8 +17,9 @@
     <script src="./src/scripts/dashboard/app.js" type="module" defer></script>
     <script src="./src/scripts/dashboard/selectQuiz.js" type="module" defer></script>
     <script src="./src/scripts/dashboard/removeQuiz.js" defer type="module"></script>
+    <script src="./src/scripts/dashboard/searchBar.js" defer type="module"></script>
 </head>
-<body class="create-quiz-active">
+<body class="dashboard-active">
 
     <aside class="sidebar-menu">
         <div class="app-name">
@@ -48,7 +49,7 @@
                     <p>Here's an overview of your app</p>
                 </div>
                 <div class="search-input">
-                    <input type="text" placeholder="Search"><span class="material-icons-outlined search-icon">
+                    <input type="search" placeholder="Search" id="search-bar"><span class="material-icons-outlined search-icon">
                         search
                         </span>
                 </div>

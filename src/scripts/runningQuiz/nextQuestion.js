@@ -8,7 +8,12 @@ export const nextQuestion = () => {
         quiz.classList.add('hide')
         result.parentNode.classList.remove('hide')
         const scoreOutput = quizHandler.points > 1 || quizHandler.points == 0 ? "points" : "point";
-        result.textContent = `You finished quiz with ${quizHandler.points}/${quizHandler.CURRENT_QUIZ.questions.length} ${scoreOutput} !`
+        result.textContent = `You finished quiz with ${quizHandler.points}/${quizHandler.CURRENT_QUIZ.questions.length} ${scoreOutput}!`
+        const doneButton = document.createElement('button');
+        doneButton.addEventListener('click', () => window.close())
+        doneButton.textContent = "Done!"
+        doneButton.classList = "done"
+        result.appendChild(doneButton)
         const lastScore = {
             quizIndex: quizHandler.CURRENT_QUIZ_INDEX,
             quizScore: quizHandler.points
